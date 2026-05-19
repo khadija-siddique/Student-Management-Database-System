@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Management System 🎓</title>
+  <link rel="stylesheet" href="student.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>🎓 Student Management System</h1>
+  <p>Register your student record easily and accurately 📚</p>
+</header>
+
+<main>
+  <form action="insert.php" method="POST">
+
+    <!-- Personal Details -->
+    <fieldset>
+      <legend>👤 Personal Details</legend>
+
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" id="phone" name="phone" placeholder="03XXXXXXXXX" required>
+      <input type="text" id="cnic" name="cnic" placeholder="CNIC Last 4 digits" maxlength="4" required>
+      <input type="number" name="age" placeholder="Age" min="10" max="60" required>
+
+    </fieldset>
+
+    <!-- Gender -->
+    <fieldset>
+      <legend>🚻 Gender</legend>
+
+      <div class="option">
+        <input type="radio" name="gender" value="Male" required>
+        <label>Male</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" name="gender" value="Female">
+        <label>Female</label>
+      </div>
+
+    </fieldset>
+
+    <!-- Academic Details -->
+    <fieldset>
+      <legend>📖 Academic Details</legend>
+
+      <input type="text" id="rollno" name="rollno" placeholder="Roll Number (e.g. 2024-CS-001)" required>
+
+      <select name="department" id="department" required>
+        <option value="">Select Department</option>
+        <option>Computer Science</option>
+        <option>Software Engineering</option>
+        <option>Information Technology</option>
+        <option>Electrical Engineering</option>
+        <option>Mechanical Engineering</option>
+        <option>Business Administration</option>
+      </select>
+
+      <select name="semester" required>
+        <option value="">Select Semester</option>
+        <option>1st Semester</option>
+        <option>2nd Semester</option>
+        <option>3rd Semester</option>
+        <option>4th Semester</option>
+        <option>5th Semester</option>
+        <option>6th Semester</option>
+        <option>7th Semester</option>
+        <option>8th Semester</option>
+      </select>
+
+      <select name="program" required>
+        <option value="">Select Program</option>
+        <option>BS (4 Years)</option>
+        <option>MS / M.Phil</option>
+        <option>PhD</option>
+        <option>Associate Degree (2 Years)</option>
+      </select>
+
+      <input type="number" id="marks" name="marks" placeholder="Obtained Marks (out of 1100)" min="0" max="1100" required>
+
+    </fieldset>
+
+    <!-- Extras -->
+    <fieldset>
+      <legend>🏅 Extra Activities</legend>
+
+      <div class="option">
+        <input type="checkbox" name="sports" value="Yes">
+        <label>Sports 🏆</label>
+      </div>
+
+      <div class="option">
+        <input type="checkbox" name="scholarship" value="Yes">
+        <label>Scholarship 💰</label>
+      </div>
+
+    </fieldset>
+
+    <!-- Guardian -->
+    <fieldset>
+      <legend>👨‍👩‍👦 Guardian Details</legend>
+
+      <input type="text" name="guardian_name" placeholder="Guardian Name" required>
+      <input type="tel" name="guardian_phone" placeholder="Guardian Phone" required>
+
+    </fieldset>
+
+    <!-- Confirmation -->
+    <fieldset>
+      <legend>✅ Confirmation</legend>
+
+      <div class="option">
+        <input type="checkbox" id="confirm" required>
+        <label for="confirm">I confirm all information is correct</label>
+      </div>
+
+      <textarea name="remarks" placeholder="Additional Remarks ✍️"></textarea>
+
+    </fieldset>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button type="submit">🎓 Register Student</button>
+      <button type="reset">🔄 Reset</button>
+
+      <button type="button" onclick="window.location.href='view.php'">
+        📄 View Students
+      </button>
+    </div>
+
+  </form>
+</main>
+
+<footer>
+  🌟 Fill all required fields to complete student registration
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

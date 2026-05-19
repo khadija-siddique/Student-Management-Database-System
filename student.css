@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0a2e1f, #145a32);
+  color: rgb(255, 255, 255);
+}
+
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+/* FORM */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #0d3b22;
+  padding: 30px;
+  border-radius: 12px;
+  width: 1000px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(60, 54, 54, 0.557);
+}
+
+/* FIELDSET */
+fieldset {
+  border: 1px solid #1e8449;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  background-color: rgba(240, 255, 240, 0.85);
+  color: #020f02;
+}
+
+input::placeholder {
+  color: #1a3d1a;
+  font-style: italic;
+}
+
+/* OPTIONS (radio/checkbox FIX) */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.option input {
+  width: auto;
+}
+
+/* TEXTAREA */
+textarea {
+  height: 70px;
+  resize: none;
+  color: #020f02;
+}
+
+textarea::placeholder {
+  color: #1a3d1a;
+  font-style: italic;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 25%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #27ae60;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #58d68d;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #ccccccf7;
+}
